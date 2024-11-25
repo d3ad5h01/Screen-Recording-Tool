@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+	<meta http-equiv="content-language" content="en-US">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Screen Recording Tool</title>
+	<link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+	<div class="container my-5">
+		<h1 class="title mb-5">Screen Recording Tool</h1>
+
+		<video class="w-100 video-output my-3" id="voutput" autoplay controls></video>
+
+		<div class="text-center mt-3">
+			<button id="vstart" title="Start" class="action-button">
+				Start
+			</button>
+			<button id="vpause" title="Pause" class="action-button">
+				Pause
+			</button>
+			<button id="vstop" title="Stop" class="action-button">
+				Stop
+			</button>
+			<button id="vdownload" title="Download" class="action-button">
+				Save
+			</button>
+		</div>
+
+		<div class="text-center mt-3 h4" id="vtimer">
+			00:00:00
+		</div>
+	</div>
+
+	<script src="libs/stopwatch.min.js"></script>
+	<script src="libs/fix-webm-duration.js"></script>
+	<script src="index.js"></script>
+</body>
+
+</html>
